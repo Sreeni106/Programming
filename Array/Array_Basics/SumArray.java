@@ -1,6 +1,6 @@
 // WAJP to sum the n-1 length of elements in an array for every possible. And print the max and min sum of the elements.
 import java.util.Scanner;
-class AssesmentOne
+class SumArray
 {
     static Scanner sc=new Scanner(System.in);
     public static void main(String [] args)

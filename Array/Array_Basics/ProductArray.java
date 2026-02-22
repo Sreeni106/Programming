@@ -19,22 +19,43 @@ class ProductArray
             System.out.print(arr[i]+" ");   // 3 5 2 1 4
         }
         System.out.println();
-        int[] product=new int[size];
+        // Product all
+        // int[] product=new int[size];
+        // for(int i=0;i<arr.length;i++)
+        // {
+        //     product[i]=1;
+        //     for(int j=0;j<arr.length;j++)
+        //     {
+        //         if(i!=j){
+        //             product[i]*=arr[j];
+        //         }
+        //     }
+        // }
+        // System.out.println("Sum array:");
+        // for(int i=0;i<product.length;i++)
+        // {
+        //     System.out.print(product[i]+" ");  // 40 24 60 120 30
+        // }
+        // System.out.println();
+        int[] res=productAll(arr,size);
+        for(int i=0;i<res.length;i++)
+        {
+            System.out.println(res[i]);
+        }
+    }
+    static int[] productAll(int[]arr,int size)
+    {
+        // product
+        int product=1;
         for(int i=0;i<arr.length;i++)
         {
-            product[i]=1;
-            for(int j=0;j<arr.length;j++)
-            {
-                if(i!=j){
-                    product[i]*=arr[j];
-                }
-            }
+            product*=arr[i];
         }
-        System.out.println("Sum array:");
-        for(int i=0;i<product.length;i++)
+        int[] res=new int[size];
+        for(int i=0;i<arr.length;i++)
         {
-            System.out.print(product[i]+" ");  // 40 24 60 120 30
+            res[i]=product/arr[i];
         }
-        System.out.println();
+        return res;
     }
 }
