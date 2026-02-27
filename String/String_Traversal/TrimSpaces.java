@@ -25,7 +25,7 @@ public class TrimSpaces {
     static int findEnding(String s)
     {
         int end=0;
-        for(int i=s.length()-1;i>=0;i++)
+        for(int i=s.length()-1;i>=0;i--)
         {
             char ch=s.charAt(i);
             if(ch!=' ')
@@ -42,7 +42,10 @@ public class TrimSpaces {
         for(int i=findStarting(s);i<=findEnding(s);i++)
         {
             char ch=s.charAt(i);
-            t+=ch;
+            if(ch!=' '||(ch==' ' && s.charAt(i+1)!=' '))   // I tried this line.
+            {
+                t+=ch;
+            }
         }
         return t;
     }
