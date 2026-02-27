@@ -7,7 +7,7 @@ public class PrintAllPalindrome {
     static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
         String s="mississippi";
-        int size=sc.nextInt();
+        int size=sc.nextInt(); //4
         printString(s,size);
     }
     static void printString(String s,int size)
@@ -20,8 +20,28 @@ public class PrintAllPalindrome {
             {
                 t+=s.charAt(j);
             }
-            System.out.println(t);
+            if(CheckPalindrome(t))
+            {
+                System.out.println(t);
+            }
         }
     }
-    static 
+    static boolean CheckPalindrome(String s)
+    {
+        int i=0;
+        int j=s.length()-1;
+        while(j>i)
+        {
+            if(s.charAt(i)==s.charAt(j))
+            {
+                i++;
+                j--;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }

@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class CountSubstring {
     static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
-        String s1=sc.nextLine();
-        String s2=sc.nextLine();
+        String s1=sc.nextLine(); // mississippi
+        String s2=sc.nextLine(); //issi
         System.out.println(checkPresent(s1, s2));
     }
     static int checkPresent(String s1,String s2)
