@@ -1,4 +1,5 @@
 // Given a string s. Write a program to count the number of words in the string
+
 import java.util.Scanner;
 class CountWords
 {
