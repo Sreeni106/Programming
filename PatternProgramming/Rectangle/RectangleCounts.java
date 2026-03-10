@@ -1,4 +1,4 @@
-package PatternProgramming;
+package PatternProgramming.Rectangle;
 
 import java.util.Scanner;
 

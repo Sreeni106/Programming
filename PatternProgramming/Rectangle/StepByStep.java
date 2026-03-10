@@ -1,11 +1,9 @@
-package PatternProgramming;
+package PatternProgramming.Rectangle;
 
-import java.util.Scanner;
 
 public class StepByStep {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        int n=5;
         int count=0;
         for(int i=0;i<n;i++)
         {
