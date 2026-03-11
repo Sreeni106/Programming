@@ -1,13 +1,13 @@
 package Number_Programming.For_loop;
 
-public class MultiNumber {
+public class MulpiplesOfBoth {
     public static void main(String[] args) {
         int n=20;
         for(int i=1;i<=n;i++)
         {
-            if(i%2==0 || i%3==0)
+            if(i%2==0 && i%3==0)
             {
-                System.out.print(i+" ");  //2 3 4 6 8 9 10 12 14 15 16 18 20 
+                System.out.print(i+" ");  //6 12 18 
             }
         }
     }
