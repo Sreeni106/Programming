@@ -13,7 +13,7 @@ class AllSubArray
         }
         for(int num=1;num<=arr.length;num++)
         {
-            for(int i=0;i<=arr.length-num;i++)
+            for(int i=0;i<=arr.length-num;i++) // -num is added because to avoid array index bound exception
             {
                 for(int j=i;j<i+num;j++)
                 {

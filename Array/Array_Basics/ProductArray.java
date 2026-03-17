@@ -42,6 +42,7 @@ class ProductArray
         {
             System.out.println(res[i]);
         }
+        
     }
     static int[] productAll(int[]arr,int size)
     {
@@ -51,6 +52,7 @@ class ProductArray
         {
             product*=arr[i];
         }
+        System.out.println(product);
         int[] res=new int[size];
         for(int i=0;i<arr.length;i++)
         {

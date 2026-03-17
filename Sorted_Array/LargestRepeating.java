@@ -18,19 +18,13 @@ class LargestRepeating
             System.out.print(arr[i]+" ");
         }
         System.out.println();
-        int count=1;
         int largestelement=arr[0];
         for(int i=0;i<arr.length-1;i++)
         {
                 if(arr[i]==arr[i+1])
                 {
-                    count+=1;
                     largestelement=arr[i+1]; // This is correct , but not best.
-                }
-                else
-                {
-                    count=1;
-                }   
+                } 
         }
         System.out.println("Largest element: "+largestelement);
     }
